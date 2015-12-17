@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+	<head>
+		<meta charset="ytf-8" />
+		<title>AI Car</title>
+		<style>
+		@font-face {font-family:myFont; src: url("ka1.ttf")}
+		</style>
+		<script language="javascript" type="text/javascript" src="Canvas.js"></script>
+		<script language="javascript" type="text/javascript" src="GameModel.js"></script>
+	    <script language="javascript" type="text/javascript" src="Car.js"></script>
+	    <script language="javascript" type="text/javascript" src="FlowController.js"></script>
+	    
+	    <script language="javascript" type="text/javascript" src="GACar.js"></script>
+		<script language="javascript" type="text/javascript" src="Genome.js"></script>
+	    <script language="javascript" type="text/javascript" src="NeuralNet.js"></script>
+	    <script language="javascript" type="text/javascript" src="NeuronLayer.js"></script>
+	    <script language="javascript" type="text/javascript" src="Neuron.js"></script>
+	</head>
+	
+	<body>
+		<div>
+			<button id = "ShowCaseSlow" type="button" onclick="init(false,50)">Show Case (Slow)</button>
+			<button id = "ShowCaseFast" type="button" onclick="init(false,0)">Show Case (fast)</button>
+
+			<button id = "Training" type="button" onclick="init(true,2)">Training</button>
+			<button type="button" onClick="window.location.reload()">Stop</button>
+		</div>
+		
+		<div>
+			<canvas id="canvas" width ="1000" height ="800"></canvas>
+		</div>
+	</body>
+</html>
